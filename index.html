@@ -7,12 +7,6 @@
         #current-time {
             font-size: 24px;
             font-weight: bold;
-            color: black;
-        }
-        @media (prefers-color-scheme: dark) {
-            #current-time {
-                color: white;
-            }
         }
     </style>
 </head>
@@ -21,6 +15,7 @@
 <script>
     setInterval(() => {
         document.getElementById('current-time').textContent = (new Date()).toTimeString().split(' ')[0];;
+        document.getElementById('current-time').style.color = window.matchMedia("(prefers-color-scheme: dark)").matches ? "white" : "black";
         }, 1000);
 </script>
 </body>
