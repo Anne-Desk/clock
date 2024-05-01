@@ -8,10 +8,14 @@
             font-size: 24px;
             font-weight: bold;
             color: dark;
-            @media (prefers-color-scheme: dark) {
-                #current-time {
-                    color: white;
-                }
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @media (prefers-color-scheme: dark) {
+            #current-time {
+                color: white;
             }
         }
     </style>
