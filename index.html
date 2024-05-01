@@ -8,10 +8,11 @@
             font-size: 24px;
             font-weight: bold;
             color: dark;
-            position: fixed;
-            top: 50%;
+            position: absolute; /* 절대 위치 사용 */
             left: 50%;
+            top: 50%;
             transform: translate(-50%, -50%);
+            margin: -12px 0 0 -12px;
         }
         @media (prefers-color-scheme: dark) {
             #current-time {
