@@ -12,12 +12,10 @@
 </head>
 <body>
     <div id="current-time"></div>
-    <a class="weatherwidget-io" href="https://forecast7.com/en/37d57126d98/seoul/" data-label_1="SEOUL" data-label_2="WEATHER" data-icons="Climacons" data-days="5" data-shadow="#ffffff" data-lowcolor="#333333" data-cloudcolor="#555555" data-raincolor="#333333" data-snowcolor="#777777" >SEOUL WEATHER</a>
 <script>
     setInterval(() => {
         document.getElementById('current-time').textContent = (new Date()).toTimeString().split(' ')[0];;
         }, 1000);
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
 </body>
 </html>
