@@ -8,7 +8,7 @@
             font-family: 'IntelOneMono';
             src: url('IntelOneMono-Medium.woff2') format('woff2');
         }
-        body, html {
+        html {
             font-family: 'IntelOneMono';
             font-size: 28px;
             height: 100%;
@@ -16,13 +16,11 @@
             justify-content: center;
             align-items: center;
             margin: 0;
-        }
-        .current-time {
             background-color: white;
             color: black;
         }
         @media (prefers-color-scheme: dark) {
-            .current-time {
+            html {
                 background-color: black;
                 color: white;
             }
@@ -30,10 +28,9 @@
     </style>
 </head>
 <body>
-    <div id="current-time"></div>
 <script>
     setInterval(() => {
-        document.getElementById('current-time').textContent = (new Date()).toTimeString().split(' ')[0];
+        document.body.textContent = (new Date()).toTimeString().split(' ')[0];
         }, 1000);
 </script>
 </body>
